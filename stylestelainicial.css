@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0e1;
+}
+
+/* Cabeçalho */
+header {
+    background: #5a3a0d;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Carrinho */
+.cart {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Seções */
+.about, .location, .menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Cardápio */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Botões */
+.btn {
+    background: #d99b4f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about p {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    display: grid;
+   
+}
+.about {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    display: grid;
+   
+}
+
+.texto{  
+justify-content: center;
+ display:grid;
+ width: 600px;
+}
+
+.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.titulo{
+    text-align: center;
+    color: #5a3a0d;
+    font-style: italic;
+}
+
+.menu .hidden{
+    color: #83591f;
+}

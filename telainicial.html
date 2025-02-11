@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapori d'Italia</title>
+    <link rel="stylesheet" href="stylestelainicial.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Sapori d'Italia</div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#" id="toggle-cardapio">Nosso Cardápio</a></li>
+                <li><a href="reservas.html" class="btn reserve-btn">Reservar Mesa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrinho -->
+    <div class="cart">
+        <h3>🛒 Carrinho</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="total-price">R$ 0,00</span></p>
+        <button id="clear-cart" class="btn">Esvaziar</button>
+    </div>
+
+    <!-- Seção Sobre Nós -->
+      <h2 class="titulo">Sobre o Restaurante</h2>
+    <section id="sobre" class="about">
+       
+        <p class="texto">Fundado em 1960, o Sapori d’Italia nasceu do sonho de uma família italiana apaixonada por gastronomia.
+             Inspirados pelas tradições de sua terra natal, trouxeram receitas autênticas e um compromisso inabalável com a qualidade e o sabor. Ao longo das décadas, o restaurante se tornou um verdadeiro refúgio gastronômico, onde a tradição e a sofisticação da culinária italiana se encontram para criar uma experiência inesquecível. Cada prato é preparado com ingredientes selecionados, seguindo receitas clássicas que exaltam os aromas e sabores da Itália. Nosso ambiente acolhedor e elegante proporciona o cenário perfeito para momentos especiais, seja um jantar romântico, uma celebração em família ou um encontro entre amigos. Venha descobrir o verdadeiro sabor da Itália em cada detalhe!</p>
+    </section>
+
+    <!-- Seção Localização -->
+    <section id="localizacao" class="location">
+        <h2 class="titulo">Onde Estamos</h2>
+        <p>📍 Rua das Oliveiras, 123 - São Paulo, SP</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467690.1438961028!2d-46.92495935413982!3d-23.682063548955284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1739280956959!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Seção Cardápio -->
+    <section id="cardapio" class="menu hidden">
+        <h2>Cardápio</h2>
+
+        <div class="menu-category">
+            <h3>Entradas</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="brusccheta.jpg" height="100px" width="90px">
+                    <h4>Bruschetta al Pomodoro</h4>
+                    <p>Pão crocante com tomates frescos, manjericão, alho e azeite extravirgem.</p>
+                    <span>R$ 35,00</span>
+                    <button class="btn add-to-cart" data-name="Bruschetta al Pomodoro" data-price="35.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="carpaccio.jpg" height="100px" width="90px">
+                    <h4>Carpaccio di Manzo</h4>
+                    <p>Finas fatias de filé-mignon com rúcula, lascas de parmesão e molho de mostarda trufada.</p>
+                    <span>R$ 78,00</span>
+                    <button class="btn add-to-cart" data-name="Carpaccio di Manzo" data-price="78.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="burrata.jpg" height="100px" width="90px">
+                    <h4>Burrata con Prosciutto e Fichi</h4>
+                    <p>Burrata cremosa servida com presunto de Parma, figos frescos e redução de balsâmico.</p>
+                    <span>R$ 65,00</span>
+                    <button class="btn add-to-cart" data-name="Burrata con Prosciutto e Fichi" data-price="65.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="polpette.jpg" height="100px" width="90px">
+                    <h4>Polpette al Sugo</h4>
+                    <p>Mini almôndegas italianas ao molho de tomate artesanal e parmesão envelhecido.</p>
+                    <span>R$ 55,00</span>
+                    <button class="btn add-to-cart" data-name="Polpette al Sugo" data-price="55.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="arancini.jpg" height="100px" width="90px">
+                    <h4>Arancini di Tartufo</h4>
+                    <p>Bolinhos de risoto recheados com queijo e trufas negras, fritos até a perfeição.</p>
+                    <span>R$ 120,00</span>
+                    <button class="btn add-to-cart" data-name="Arancini di Tartufo" data-price="120.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="melanzane.jpg" height="100px" width="90px">
+                    <h4>Melanzane alla Parmigiana</h4>
+                    <p>Berinjela grelhada com molho artesanal, mozzarella de búfala, manjericão e azeite extravirgem gratinado.</p>
+                    <span>R$ 45,00</span>
+                    <button class="btn add-to-cart" data-name="Melanzane alla Parmigiana" data-price="45.00">Adicionar</button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="menu-category">
+            <h3>Pratos Principais</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="risotto.jpg" height="100px" width="90px">
+                    <h4>Risotto ai Frutti di Mare</h4>
+                    <p>Arroz arbóreo cremoso com camarões, polvo, mexilhões e vinho branco.</p>
+                    <span>R$ 130,00</span>
+                    <button class="btn add-to-cart" data-name="Risotto ai Frutti di Mare" data-price="130.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="tagliatelle.jpg" height="100px" width="90px">
+                    <h4>Tagliatelle al Tartufo e Funghi</h4>
+                    <p>Massa artesanal com creme de parmesão, cogumelos selvagens e lâminas de trufa negra.</p>
+                    <span>R$ 150,00</span>
+                    <button class="btn add-to-cart" data-name="Tagliatelle al Tartufo e Funghi" data-price="150.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="ravioli.png" height="100px" width="90px">
+                    <h4>Ravioli di Burrata e Limone</h4>
+                    <p>Ravioli recheado com burrata e raspas de limão siciliano, servido com manteiga de sálvia.</p>
+                    <span>R$ 90,00</span>
+                    <button class="btn add-to-cart" data-name="Ravioli di Burrata e Limone" data-price="90.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="ossobuco.jpg" height="100px" width="90px">
+                    <h4>Ossobuco alla Milanese</h4>
+                    <p>Vitela cozida lentamente ao molho de vinho tinto e ervas, acompanhada de risoto alla milanese.</p>
+                    <span>R$ 110,00</span>
+                    <button class="btn add-to-cart" data-name="Ossobuco alla Milanese" data-price="110.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="filetto.jpg" height="100px" width="90px">
+                    <h4>Filetto al Gorgonzola</h4>
+                    <p>Filé-mignon grelhado ao molho de gorgonzola, servido com purê de batatas trufado.</p>
+                    <span>R$ 115,00</span>
+                    <button class="btn add-to-cart" data-name="Filetto al Gorgonzola" data-price="115.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="lasagna.jpg" height="100px" width="90px">
+                    <h4>Lasagna alla Bolognese</h4>
+                    <p>Lasanha clássica com massa fresca, ragù de carne, molho bechamel e parmesão gratinado.</p>
+                    <span>R$ 45,00</span>
+                    <button class="btn add-to-cart" data-name="Lasagna alla Bolognese" data-price="45.00">Adicionar</button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="menu-category">
+            <h3>Sobremesas</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="tiramisu.jpg" height="100px" width="90px">
+                    <h4>Tiramisù Tradizionale</h4>
+                    <p>Camadas de biscoito embebido em café, creme mascarpone e cacau belga.</p>
+                    <span>R$ 40,00</span>
+                    <button class="btn add-to-cart" data-name="Tiramisù Tradizionale" data-price="40.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="panna.jpg" height="100px" width="90px">
+                    <h4>Panna Cotta ai Frutti di Bosco</h4>
+                    <p>Panna cotta de baunilha com calda de frutas vermelhas frescas.</p>
+                    <span>R$ 50,00</span>
+                    <button class="btn add-to-cart" data-name="Panna Cotta ai Frutti di Bosco" data-price="50.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="cannoli.jpg" height="100px" width="90px">
+                    <h4>Cannoli Siciliani</h4>
+                    <p> Massa crocante recheada com creme de ricota, raspas de laranja e chocolate amargo.</p>
+                    <span>R$ 60,00</span>
+                    <button class="btn add-to-cart" data-name="Cannoli Siciliani" data-price="60.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="torta.jpg" height="100px" width="90px">
+                    <h4>Torta Caprese</h4>
+                    <p>Bolo úmido de chocolate e amêndoas, servido com sorvete de baunilha.</p>
+                    <span>R$ 55,00</span>
+                    <button class="btn add-to-cart" data-name="Torta Caprese" data-price="55.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="semifreddo.jpg" height="100px" width="90px">
+                    <h4>Semifreddo al Pistacchio</h4>
+                    <p>Sobremesa gelada e cremosa de pistache, acompanhada de um toque de chocolate amargo e pistaches crocantes para finalizar.</p>
+                    <span>R$ 45,00</span>
+                    <button class="btn add-to-cart" data-name="Semifreddo al Pistacchio" data-price="45.00">Adicionar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="affogato.jpg" height="100px" width="90px">
+                    <h4>Affogato al Caffè</h4>
+                    <p>Espresso quente servido sobre sorvete de creme e finalizado com amêndoas caramelizadas.</p>
+                    <span>R$ 30,00</span>
+                    <button class="btn add-to-cart" data-name="Affogato al Caffè" data-price="30.00">Adicionar</button>
+                </div>
+                
+            </div>
+            
+        </div>
+       
+        
+    </section>
+
+    <script src="scriptinicio.js"></script>
+</body>
+</html>

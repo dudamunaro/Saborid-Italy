@@ -1,0 +1,38 @@
+body {
+    background: url('entrada.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #a95514;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+}
+.subtitle {
+    font-style: italic;
+}
+.hours {
+    margin-top: 20px;
+}
+.enter-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #be770d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.enter-btn:hover {
+    background-color: #e29127b8;
+}
+
+.reservacontato{
+    padding: 30px;
+}

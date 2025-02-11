@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Sapori d'Italia</title>
+    <link rel="stylesheet" href="stylesreseva.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Faça sua Reserva</h1>
+        <p class="subtitle">Garanta sua mesa com antecedência e aproveite a melhor experiência gastronômica.</p>
+
+        <form action="mailto:reservas@saporiditalia.com.br" method="post" enctype="text/plain" class="reservation-form">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Data da Reserva</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Horário</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Número de Pessoas</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit" class="btn reserve-btn">Confirmar Reserva</button>
+        </form>
+
+        <footer>
+            <p>&copy; 2025 Sapori d'Italia. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
